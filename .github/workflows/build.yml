@@ -28,7 +28,7 @@ jobs:
           elif [ "$RUNNER_OS" == "Windows" ]; then
               yarn dist
           elif [ "$RUNNER_OS" == "macOS" ]; then
-              yarn dist -m --x64 --arm64
+              yarn dist -m --universal
           else
               echo "$RUNNER_OS not supported"
               exit 1
